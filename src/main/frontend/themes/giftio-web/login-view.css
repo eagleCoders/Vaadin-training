@@ -1,0 +1,46 @@
+
+vaadin-text-field.loginBox {
+	padding-left: 10%;
+	padding-right:10%;
+}
+
+vaadin-text-field::part(label) {
+	color: #1a5fb4;
+}
+
+vaadin-text-field::part(input-field) {
+  border: 1px solid gray;
+}
+
+vaadin-text-field[focused]::part(input-field) {
+  border: 1px solid blue;
+}
+
+vaadin-password-field::part(label){
+	color: #1a5fb4;
+}
+
+vaadin-vertical-layout.base {
+	display: flex;
+	background-size: cover;
+	padding-left: 30%;
+	padding-right: 30%;
+}
+
+vaadin-form-layout {
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: var(--lumo-contrast-5pct)");
+}
+
+vaadin-button.btnLogin {
+	background-color: #1c71d8;
+	border-radius: 20px;
+	--vaadin-button-text-color : white;
+}
+
+vaadin-button.btnReset {
+	background-color: #e01b24;
+	border-radius: 20px;
+	--vaadin-button-text-color : white;
+}

@@ -1,0 +1,64 @@
+vaadin-scroller[slot="drawer"] {
+  padding: var(--lumo-space-s);
+}
+
+vaadin-side-nav-item vaadin-icon {
+  padding: 0;
+}
+
+[slot="drawer"]:is(header, footer) {
+  display: flex;
+  align-items: center;
+  gap: var(--lumo-space-s);
+  padding: var(--lumo-space-s) var(--lumo-space-m);
+  min-height: var(--lumo-size-xl);
+  box-sizing: border-box;
+}
+
+[slot="drawer"]:is(header, footer):is(:empty) {
+  display: none;
+}
+
+vaadin-button.login {
+	background-color: rgba(40, 67,135, 0.45);
+	--vaadin-button-text-color : white;
+	--vaadin-button-border-radius: 20px; 
+	--lumo-clickable-cursor: hand;
+}
+
+vaadin-button.login:hover {
+	background-color: rgba(40, 67,135, 0.75);
+	--vaadin-button-text-color : black;
+	--vaadin-button-border-radius: 20px; 
+	--lumo-clickable-cursor: hand;
+}
+
+vaadin-button.register {
+	background-color: rgba(205,92,92,0.65);
+	--vaadin-button-text-color : white;
+	--vaadin-button-border-radius: 20px; 
+	--lumo-clickable-cursor: hand;
+	
+}
+
+vaadin-button.register:hover {
+	background-color: rgba(205,92,92,0.85);
+	--vaadin-button-text-color : black;
+	--vaadin-button-border-radius: 20px; 
+	--lumo-clickable-cursor: hand;
+	
+}
+
+vaadin-side-nav-item.external::part(link) {
+    color: blue	;
+}
+
+vaadin-side-nav-item.external > vaadin-icon {
+    color: red;
+}
+
+vaadin-side-nav-item.external::part(link):hover {
+    color: blue;
+    opacity : 90;
+    text-decoration: underline;
+}
